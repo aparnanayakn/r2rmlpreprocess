@@ -10,7 +10,7 @@
             "firstname": "Jane",
             "lastname": "Smith",
             "num": "3.14",
-            "dt": "xsd:decimal"
+            "dt": ""
         }
     ],
     "languages": [
