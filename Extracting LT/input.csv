@@ -1,0 +1,13 @@
+name,lname,lang,num,dt
+john,doe,English,3,xsd:positiveInteger
+jane,smith,French,3.14,xsd:positiveInteger
+jff,rtr,en,3,xsd:positiveInteger
+fgh,fgw,fr,3.14,xsd:positiveInteger
+rahul,bhat,en,3,xsd:positiveInteger
+aparna,bhat,english,3.14,xsd:positiveInteger
+archana,kokala,en,3,xsd:positiveInteger
+shweta,shastry,fr,3.14,xsd:positiveInteger
+aks,nayak,en,3,xsd:positiveInteger
+ramya,rao,fr,3.14,xsd:positiveInteger
+natha,kanavu,en,3,xsd:positiveInteger
+aryahi,rao,fr,3.14,xsd:positiveInteger
