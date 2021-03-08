@@ -1,0 +1,18 @@
+{
+  "persons": [
+    {
+      "ID": 10,
+      "dt":"",
+      "FirstName": "http://example.com/ns#Jhon",
+      "LastName": "Smith",
+      "dt":""
+    },
+    {
+      "ID": 20,
+      "dt":"integer",
+      "FirstName": "Carlos",
+      "LastName": "Mendoza",
+      "dt":""
+    }
+  ]
+}

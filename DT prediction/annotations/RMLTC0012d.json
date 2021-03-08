@@ -1,0 +1,7 @@
+{
+  "persons": [
+    {"fname":"Bob","lname":"Smith","amount":30,"dt":"int"},
+    {"fname":"Sue","lname":"Jones","amount":20,"dt":"integer"},
+    {"fname":"Bob","lname":"Smith","amount":30,"dt":""}
+  ]
+}

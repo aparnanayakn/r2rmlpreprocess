@@ -1,0 +1,18 @@
+{
+  "countries": [{
+    "Country Code": 1,
+    "dt":"int",
+    "Name":"Bolivia, Plurinational State of",
+    "ISO 3166": "BO"
+  }, {
+    "Country Code": 2,
+    "dt":"http://www.w3.org/2001/XMLSchema#integer",
+    "Name":"Ireland",
+    "ISO 3166": "IE"
+  }, {
+    "Country Code": 3,
+    "dt":"http://www.w3.org/2001/XMLSchema#integer",
+    "Name":"Saint Martin (French part)",
+    "ISO 3166": "MF"
+  }]
+}
