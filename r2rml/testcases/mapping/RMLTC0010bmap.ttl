@@ -7,7 +7,7 @@
 <#lgdtkg>
     a rr:TriplesMap ;
 
-    rr:logicalTable [rr:tableName "RMLTC0010a" ]; 
+    rr:logicalTable [rr:tableName "RMLTC0010b" ]; 
 
     rr:subjectMap [
         rr:template "http://data.example.org/sw/{NAME}";
@@ -19,7 +19,7 @@
         rr:predicate fcc:CCODE;
 
         rr:objectMap [
-            rr:column "`[COUNTRY CODE]`"; 
+            rr:column "[COUNTRY%20CODE]"; 
 
         ];
     ];
