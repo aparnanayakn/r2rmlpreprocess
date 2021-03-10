@@ -1,3 +1,0 @@
-<http://data.example.org/sw/Venus>
-        <http://www.example.org/ont#NAME>
-                "Venus" .
