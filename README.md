@@ -6,6 +6,7 @@ This repository contains 3 directories.
 This directory contains 2 pythons files.  
 
 a. extractLG : This code helps to scrape the language tags from w3schools website. 
+
 b. convertToTag : Sample testing code that converts language to tags if any.
 
 #####  2. DT prediction:
@@ -30,7 +31,9 @@ This directory contains java code that is responsible to map CSV/RDB to RDF. It 
 Java code can be compiled with following commands. 
 
 *mvn clean*
+
 *mvn package*
+
 *mvn dependency:copy-dependencies*
 
 Once the code is compiled, following command can be used to generate RDF by considering the input and correspondng mapping file. 
