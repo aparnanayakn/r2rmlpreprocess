@@ -3,7 +3,7 @@
         <http://www.example.org/ont#FNAME>
                 "Carlos" ;
         <http://www.example.org/ont#ID>
-                "20"^^<xsd:integer> ;
+                "20^^xsd:integer" ;
         <http://www.example.org/ont#LASTNAME>
                 "Mendoza" .
 
@@ -12,6 +12,6 @@
         <http://www.example.org/ont#FNAME>
                 "http://example.com/ns#Jhon" ;
         <http://www.example.org/ont#ID>
-                "10"^^<xsd:integer> ;
+                "10^^xsd:integer" ;
         <http://www.example.org/ont#LASTNAME>
                 "Smith" .

@@ -19,7 +19,7 @@
         rr:predicate fcc:CCODE;
 
         rr:objectMap [
-            rr:column "COUNTRY%20CODE"; 
+            rr:column "COUNTRYCODE"; 
 
         ];
     ];
@@ -38,7 +38,7 @@
         rr:predicate fcc:ISO;
 
         rr:objectMap [
-            rr:column "ISO 3166"; 
+            rr:column "ISO3166"; 
 
         ];
     ];

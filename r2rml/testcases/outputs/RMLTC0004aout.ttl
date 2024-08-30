@@ -3,4 +3,4 @@
         <http://www.example.org/ont#NAME>
                 "Venus" ;
         <http://www.example.org/ont#SPORT>
-                "Tennis"@en .
+                "Tennis@en" .

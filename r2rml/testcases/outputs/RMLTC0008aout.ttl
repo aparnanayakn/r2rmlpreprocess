@@ -1,4 +1,10 @@
 <http://data.example.org/sw/10>
         a       <http://www.example.org/ont#Person> ;
+        <http://www.example.org/ont#FNAME>
+                "Venus Williams" ;
+        <http://www.example.org/ont#ID>
+                "10" ;
         <http://www.example.org/ont#SPORT>
-                "Tennis" .
+                "Tennis" ;
+        <http://www.example.org/ont#TRUTH>
+                "False^^xsd:boolean" .

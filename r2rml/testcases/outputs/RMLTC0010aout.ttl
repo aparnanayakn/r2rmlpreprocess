@@ -1,6 +1,26 @@
+<http://data.example.org/sw/Saint%20Martin%20(French%20part)>
+        a       <http://www.example.org/ont#Country> ;
+        <http://www.example.org/ont#CCODE>
+                "3" ;
+        <http://www.example.org/ont#ISO>
+                "MF" ;
+        <http://www.example.org/ont#NAME>
+                "Saint Martin (French part)" .
+
 <http://data.example.org/sw/Bolivia,%20Plurinational%20State%20of>
         a       <http://www.example.org/ont#Country> ;
+        <http://www.example.org/ont#CCODE>
+                "1" ;
         <http://www.example.org/ont#ISO>
                 "BO" ;
         <http://www.example.org/ont#NAME>
                 "Bolivia, Plurinational State of" .
+
+<http://data.example.org/sw/Ireland>
+        a       <http://www.example.org/ont#Country> ;
+        <http://www.example.org/ont#CCODE>
+                "2" ;
+        <http://www.example.org/ont#ISO>
+                "IE" ;
+        <http://www.example.org/ont#NAME>
+                "Ireland" .

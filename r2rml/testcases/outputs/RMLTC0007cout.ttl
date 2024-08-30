@@ -5,4 +5,4 @@
         <http://www.example.org/ont#ID>
                 "10" ;
         <http://www.example.org/ont#LNAME>
-                "Williams"@ga .
+                "Williams@ga" .

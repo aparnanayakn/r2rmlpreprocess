@@ -7,38 +7,54 @@
 <#lgdtkg>
     a rr:TriplesMap ;
 
-    rr:logicalTable [rr:tableName "RMLTC0010b" ]; 
+    rr:logicalTable [rr:tableName "RMLTC0007g" ]; 
 
     rr:subjectMap [
-        rr:template "http://data.example.org/sw/{NAME}";
-        rr:class fcc:Country ;
+        rr:template "http://data.example.org/sw/{ID}";
+        rr:class fcc:Person ;
     ];
 
-
     rr:predicateObjectMap [
-        rr:predicate fcc:CCODE;
+        rr:predicate fcc:ID;
 
         rr:objectMap [
-            rr:column "[COUNTRY%20CODE]"; 
+            rr:column "ID"; 
 
         ];
     ];
 
 
     rr:predicateObjectMap [
-        rr:predicate fcc:NAME;
+        rr:predicate fcc:TRUTH;
 
         rr:objectMap [
-            rr:column "NAME"; 
+           rrf:functionCall [
+	 			rrf:function <#Attachdt> ;
+	 			rrf:parameterBindings (
+	 				[ rr:column "TRUTH" ]
+	 				[ rr:column "DT" ]
+	 			) ;
+	 		] ; 
+        ];
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate fcc:FNAME;
+
+        rr:objectMap [
+            rr:column "FIRSTNAME"; 
 
         ];
     ];
 
+
     rr:predicateObjectMap [
-        rr:predicate fcc:ISO;
+        rr:predicate fcc:LNAME;
 
         rr:objectMap [
-            rr:column "ISO 3166"; 
+            rr:column "LASTNAME"; 
 
         ];
     ];

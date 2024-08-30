@@ -1,2 +1,2 @@
-ID,FirstName,truth,dt,LastName
-10,Venus,True,xsd:boolean,Williams
+students
+"{'ID': 10, 'FirstName': 'Venus', 'truth': True, 'dt': 'xsd:boolean', 'LastName': 'Williams'}"

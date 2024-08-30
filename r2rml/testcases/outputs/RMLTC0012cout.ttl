@@ -5,7 +5,7 @@
         <http://www.example.org/ont#FNAME>
                 "Bob" ;
         <http://www.example.org/ont#LNAME>
-                "Smith"@en .
+                "Smith@en" .
 
 <http://data.example.org/sw/Sue>
         a       <http://www.example.org/ont#Person> ;
@@ -14,4 +14,4 @@
         <http://www.example.org/ont#FNAME>
                 "Sue" ;
         <http://www.example.org/ont#LNAME>
-                "Jones"@en .
+                "Jones@en" .

@@ -7,7 +7,7 @@
 <#lgdtkg>
     a rr:TriplesMap ;
 
-    rr:logicalTable [rr:tableName "RMLTC0008b" ]; 
+    rr:logicalTable [rr:tableName "RMLTC0008c" ]; 
 
     rr:subjectMap [
         rr:template "http://data.example.org/sw/{ID}";
@@ -34,9 +34,15 @@
         rr:predicate fcc:FNAME;
 
         rr:objectMap [
-            rr:column "FIRSTNAME"; 
-
+            rrf:functionCall [
+	 			rrf:function <#Attachlg> ;
+	 			rrf:parameterBindings (
+	 				[ rr:column "NAME" ]
+	 				[ rr:column "LANG" ]
+	 			) ;
+	 		] ; 
         ];
+
     ];
 
 

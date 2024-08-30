@@ -14,16 +14,25 @@
         rr:class fcc:Person ;
     ];
 
+    rr:predicateObjectMap [
+        rr:predicate fcc:NAME;
+
+        rr:objectMap [
+            rr:column "NAME"; 
+
+        ];
+    ];
+
 
     rr:predicateObjectMap [
-        rr:predicate fcc:FNAME;
+        rr:predicate fcc:TRUTH;
 
         rr:objectMap [
            rrf:functionCall [
-	 			rrf:function <#Attachlg> ;
+	 			rrf:function <#Attachdt> ;
 	 			rrf:parameterBindings (
-	 				[ rr:column "FIRSTNAME" ]
-	 				[ rr:column "LANG" ]
+	 				[ rr:column "TRUTH" ]
+	 				[ rr:column "DT" ]
 	 			) ;
 	 		] ; 
         ];
@@ -36,16 +45,6 @@
 
         rr:objectMap [
             rr:column "ID"; 
-
-        ];
-    ];
-
-
-    rr:predicateObjectMap [
-        rr:predicate fcc:LNAME;
-
-        rr:objectMap [
-            rr:column "LASTNAME"; 
 
         ];
     ];

@@ -3,6 +3,6 @@
         <http://www.example.org/ont#FNAME>
                 "Venus" ;
         <http://www.example.org/ont#ID>
-                "10"^^<xsd:integer> ;
+                "10^^xsd:integer" ;
         <http://www.example.org/ont#LNAME>
                 "Williams" .

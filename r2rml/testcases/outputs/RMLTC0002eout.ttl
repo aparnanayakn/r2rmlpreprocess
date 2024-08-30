@@ -3,4 +3,4 @@
         <http://www.example.org/ont#ID>
                 "10" ;
         <http://www.example.org/ont#NAME>
-                "Venus"^^<xsd:string> .
+                "Venus^^xsd:string" .

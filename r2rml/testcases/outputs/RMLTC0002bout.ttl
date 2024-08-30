@@ -3,4 +3,4 @@
         <http://www.example.org/ont#ID>
                 "10" ;
         <http://www.example.org/ont#NAME>
-                "Venus"@en .
+                "Venus@en" .

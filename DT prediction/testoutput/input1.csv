@@ -1,0 +1,4 @@
+value,datatype,lastname,lang
+John,xsd:string,Doe,en
+3,xsd:integer,Jane,xsd:string
+Smith,fr,3.14,xsd:decimal

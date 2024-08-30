@@ -45,7 +45,7 @@ public class JSEnv {
 	 * @throws NoSuchMethodException
 	 * @throws ScriptException
 	 */
-	public static Literal invoke(String functionName, Object... parameters) 
+	public static String invoke(String functionName, Object... parameters) 
 			throws NoSuchMethodException, ScriptException {
 		Invocable invokeEngine = (Invocable) engine;
 		String attachdt = "attachdt";
@@ -58,7 +58,7 @@ public class JSEnv {
 			//logger.info(m.createTypedLiteral(parameters[0],(RDFDatatype) parameters[1]));		
 		
 //			System.out.print(l);
-			return l; 
+			return l.toString(); 
 			
 		} 
 		else if(functionName.equals(attachlg)) {
@@ -67,15 +67,14 @@ public class JSEnv {
 			Literal l = m.createLiteral(s,dt);
 			//logger.info(m.createTypedLiteral(parameters[0],(RDFDatatype) parameters[1]));		
 		
-			return l; 
+			return l.toString(); 
 			
 		} 
 	
 		else { 
 			Object o = invokeEngine.invokeFunction(functionName, parameters);
-		//	logger.info(o.toString());
-			return (Literal)o;
-			
+			return o == null ? null : o.toString();
+		
 		} 
 	}
 

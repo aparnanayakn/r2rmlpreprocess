@@ -34,7 +34,7 @@
         rr:predicate fcc:FNAME;
 
         rr:objectMap [
-            rr:column "FIRSTNAME"; 
+            rr:column "NAME"; 
 
         ];
     ];

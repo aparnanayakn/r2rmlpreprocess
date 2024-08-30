@@ -1,0 +1,4 @@
+firstname,lastname,num,dt
+John,Doe,3,xsd:integer
+Jane,Smith,3.14,xsd:decimal
+John,en,Jane,fr

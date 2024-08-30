@@ -28,7 +28,7 @@
         rr:predicate fcc:ISO;
 
         rr:objectMap [
-            rr:column "ISO%203166"; 
+            rr:column "ISO3166"; 
 
         ];
     ];
@@ -42,7 +42,7 @@
            rrf:functionCall [
 	 			rrf:function <#Attachdt> ;
 	 			rrf:parameterBindings (
-	 				[ rr:column "COUNTRY CODE" ]
+	 				[ rr:column "COUNTRYCODE" ]
 	 				[ rr:column "DT" ]
 	 			) ;
 	 		] ; 

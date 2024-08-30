@@ -1,18 +1,28 @@
 {
     "persons": [
         {
-            "firstname": "John",
+            "firstname": {
+                "value": "John",
+                "datatype": "xsd:string"
+            },
             "lastname": "Doe",
             "lang": "en",
-            "num": 3,
-            "dt": "xsd:integer"
+            "num": {
+                "value": 3,
+                "datatype": "xsd:integer"
+            }
         },
         {
-            "firstname": "Jane",
+            "firstname": {
+                "value": "Jane",
+                "datatype": "xsd:string"
+            },
             "lastname": "Smith",
             "lang": "fr",
-            "num": "3.14",
-            "dt": "xsd:decimal"
+            "num": {
+                "value": "3.14",
+                "datatype": "xsd:decimal"
+            }
         }
     ]
 }
