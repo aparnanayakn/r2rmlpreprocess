@@ -1,0 +1,7 @@
+<http://data.example.com/employee/112>
+        a                             <http://example.com/ns#Employee> ;
+        <http://example.com/ns#name>  "Rama"^^<http://example.com/ns#test> .
+
+<http://data.example.com/employee/113>
+        a                             <http://example.com/ns#Employee> ;
+        <http://example.com/ns#name>  "Krishna"^^<http://example.com/ns#test> .
