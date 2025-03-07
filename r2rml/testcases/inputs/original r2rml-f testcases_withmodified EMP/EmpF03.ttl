@@ -1,0 +1,9 @@
+<http://data.example.com/employee/112>
+        a                             <http://example.com/ns#Employee> ;
+        <http://example.com/ns#name>  "Rama" ;
+        <http://example.com/ns#test>  "112"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://data.example.com/employee/113>
+        a                             <http://example.com/ns#Employee> ;
+        <http://example.com/ns#name>  "Krishna" ;
+        <http://example.com/ns#test>  "113"^^<http://www.w3.org/2001/XMLSchema#float> .

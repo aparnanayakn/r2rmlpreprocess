@@ -18,6 +18,7 @@ import org.apache.jena.rdf.model.Statement;
 import org.apache.log4j.Logger;
 
 import r2rml.engine.RRF;
+import org.apache.jena.rdf.model.RDFNode;
 
 /**
  * JSEnv Class.
@@ -51,33 +52,20 @@ public class JSEnv {
 		String attachdt = "attachdt";
 		String attachlg = "attachlg";
 
-		if(functionName.equals(attachdt)) {
-			String dt=(String) parameters[1];
-			String s=(String) parameters[0];
-			Literal l = m.createTypedLiteral(s,dt);
-			//logger.info(m.createTypedLiteral(parameters[0],(RDFDatatype) parameters[1]));		
-		
-//			System.out.print(l);
-			return l.toString(); 
-			
-		} 
-		else if(functionName.equals(attachlg)) {
-			String dt=(String) parameters[1];
-			String s=(String) parameters[0];
-			Literal l = m.createLiteral(s,dt);
-			//logger.info(m.createTypedLiteral(parameters[0],(RDFDatatype) parameters[1]));		
-		
-			return l.toString(); 
-			
-		} 
-	
-		else { 
-			Object o = invokeEngine.invokeFunction(functionName, parameters);
-			return o == null ? null : o.toString();
-		
-		} 
+		  if (functionName.equals(attachdt)) {
+		        String dt = (String) parameters[1];
+		        String s = (String) parameters[0];
+	        	logger.info("FROM FUNCTION \n\n\n INTEGER"+s);
+		        return s + "^^" + dt;
+		    } else if (functionName.equals(attachlg)) {
+		        String lang = (String) parameters[1];
+		        String s = (String) parameters[0];
+		        return s + "@" + lang;
+		    } else {
+		        Object o = invokeEngine.invokeFunction(functionName, parameters);
+		        return o.toString(); 
+		    } 
 	}
-
 	/**
 	 * Loading JavaScript code.
 	 * 

@@ -1,8 +1,0 @@
-{
-  "students": [{
-    "ID": 10,
-    "dt":"integer",
-    "FirstName":"Venus",
-    "LastName":"Williams"
-  }]
-}

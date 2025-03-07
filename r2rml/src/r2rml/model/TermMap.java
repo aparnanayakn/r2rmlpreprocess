@@ -18,6 +18,8 @@ import org.apache.jena.enhanced.UnsupportedPolymorphismException;
 import org.apache.jena.iri.IRI;
 import org.apache.jena.iri.IRIFactory;
 import org.apache.jena.rdf.model.Literal;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.RDFList;
 import org.apache.jena.rdf.model.RDFNode;
 import org.apache.jena.rdf.model.Resource;
@@ -411,7 +413,42 @@ public abstract class TermMap extends R2RMLResource {
 			throw new R2RMLException("Problem generating safe IRI " + iri, e);
 		}
 	}
+	
+/*	private Object processFunctionResult(String result) {
+		Model m = ModelFactory.createDefaultModel();
+	    if (result.contains("^^")) {
+	        String[] parts = result.split("\\^\\^");
+	        return m.createTypedLiteral(parts[0], parts[1]);
+	    } else if (result.contains("@")) {
+	        String[] parts = result.split("@");
+	        return m.createLiteral(parts[0], parts[1]);
+	    } else {
+	        return m.createLiteral(result);
+	    }
+	} */
+	private Object processFunctionResult(String result) {
+		Model m = ModelFactory.createDefaultModel();
+	    if (result.contains("^^")) {
+	        String[] parts = result.split("\\^\\^");
+	        String value = parts[0];
+	        String dataType = parts[1];
 
+	        // Check if the value is an integer and the dataType is xsd:integer
+	        if (dataType.equals("xsd:integer")) {
+	        	logger.info("COMING INSIDE\n\n\n INTEGER"+value);
+	            return m.createTypedLiteral(Integer.parseInt(value), dataType);
+	        } else {
+	        	logger.info("COMING OUTSIDE\n\n\n INTEGER");
+	            return m.createTypedLiteral(value, dataType);
+	        }
+	    } else if (result.contains("@")) {
+	        String[] parts = result.split("@");
+	        return m.createLiteral(parts[0], parts[1]);
+	    } else {
+	        return m.createLiteral(result);
+	    }
+	}
+	
 	private Object getValueForRDFTerm(Row row) throws R2RMLException {
 		if(isConstantValuedTermMap()) {
 			return constant;
@@ -443,8 +480,10 @@ public abstract class TermMap extends R2RMLResource {
 				arguments.add(argument);
 			}
 			try {
-				return JSEnv.invoke(functionCall.getFunctionName(), arguments.toArray());
-			} catch (NoSuchMethodException | ScriptException e) {
+				
+				 String result = JSEnv.invoke(functionCall.getFunctionName(), arguments.toArray());
+		            return processFunctionResult(result);
+		            } catch (NoSuchMethodException | ScriptException e) {
 				throw new R2RMLException("Error invoking function.", e);
 			}
 		}

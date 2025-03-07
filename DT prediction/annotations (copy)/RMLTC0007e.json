@@ -1,8 +1,0 @@
-{
-  "students": [{
-    "ID": 10,
-    "Name":"Venus",
-    "truth":false,
-    "dt":"boolean"
-  }]
-}

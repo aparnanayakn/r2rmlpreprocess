@@ -1,0 +1,7 @@
+<http://data.example.com/employee/7369>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "test-3" , "test-1" , "test-2" , "test-5"@fr , "test-6"@fr-be , "test-4"@en ;
+        <http://example.com/ns#testBoolean>
+                false ;
+        <http://example.com/ns#testNumeric>
+                1.663E-4 , 4.002602 , 2 .

@@ -7,7 +7,7 @@
 <#lgdtkg>
     a rr:TriplesMap ;
 
-    rr:logicalTable [rr:tableName "input1" ]; 
+    rr:logicalTable [rr:tableName "input8" ]; 
 
     rr:subjectMap [
         rr:template "http://data.example.org/sw/{FIRSTNAME}";
@@ -16,8 +16,10 @@
 
     rr:predicateObjectMap [
         rr:predicate fcc:FNAME;
+
         rr:objectMap [
             rr:column "FIRSTNAME"; 
+
         ];
     ];
 
