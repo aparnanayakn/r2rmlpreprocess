@@ -4,15 +4,13 @@
             "firstname": "John",
             "lastname": "Doe",
             "lang": "en",
-            "num": 3,
-            "dt": "xsd:integer"
+            "num": 3
         },
         {
             "firstname": "Jane",
             "lastname": "Smith",
             "lang": "fr",
-            "num": "3.14",
-            "dt": "xsd:decimal"
+            "num": "3.14"
         }
     ]
 }

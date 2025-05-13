@@ -10,7 +10,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:name;
         # In canonical form, the language should be en-EN
-        rr:objectMap [ rr:column "FNAME" ; rr:language "en-US" ];
+        rr:objectMap [ rr:column "FNAME" ; rr:language "EN-en" ];
     ].
 	
 <#a> rr:objectMap <#b> .

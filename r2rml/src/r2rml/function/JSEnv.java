@@ -55,7 +55,6 @@ public class JSEnv {
 		  if (functionName.equals(attachdt)) {
 		        String dt = (String) parameters[1];
 		        String s = (String) parameters[0];
-	        	logger.info("FROM FUNCTION \n\n\n INTEGER"+s);
 		        return s + "^^" + dt;
 		    } else if (functionName.equals(attachlg)) {
 		        String lang = (String) parameters[1];
@@ -63,8 +62,11 @@ public class JSEnv {
 		        return s + "@" + lang;
 		    } else {
 		        Object o = invokeEngine.invokeFunction(functionName, parameters);
-		        return o.toString(); 
+		        return o == null ? null : o.toString(); 
 		    } 
+		  //Invocable invokeEngine = (Invocable) engine;
+			//Object o = invokeEngine.invokeFunction(functionName, parameters);
+			//return o == null ? null : o.toString();
 	}
 	/**
 	 * Loading JavaScript code.

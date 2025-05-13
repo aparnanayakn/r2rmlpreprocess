@@ -432,15 +432,15 @@ public abstract class TermMap extends R2RMLResource {
 	        String[] parts = result.split("\\^\\^");
 	        String value = parts[0];
 	        String dataType = parts[1];
-
+	        return m.createTypedLiteral(value, dataType);
 	        // Check if the value is an integer and the dataType is xsd:integer
-	        if (dataType.equals("xsd:integer")) {
-	        	logger.info("COMING INSIDE\n\n\n INTEGER"+value);
-	            return m.createTypedLiteral(Integer.parseInt(value), dataType);
-	        } else {
-	        	logger.info("COMING OUTSIDE\n\n\n INTEGER");
-	            return m.createTypedLiteral(value, dataType);
-	        }
+	      //  if (dataType.equals("xsd:integer")) {
+	        //	logger.info("COMING INSIDE\n\n\n INTEGER"+value);
+	         //   return m.createTypedLiteral(Integer.parseInt(value), dataType);
+	       // } else {
+	        //	logger.info("COMING OUTSIDE\n\n\n INTEGER");
+	          //  return m.createTypedLiteral(value, dataType);
+	      //  }
 	    } else if (result.contains("@")) {
 	        String[] parts = result.split("@");
 	        return m.createLiteral(parts[0], parts[1]);
@@ -482,6 +482,7 @@ public abstract class TermMap extends R2RMLResource {
 			try {
 				
 				 String result = JSEnv.invoke(functionCall.getFunctionName(), arguments.toArray());
+				// System.out.println("\n\n\nResult"+result);
 		            return processFunctionResult(result);
 		            } catch (NoSuchMethodException | ScriptException e) {
 				throw new R2RMLException("Error invoking function.", e);

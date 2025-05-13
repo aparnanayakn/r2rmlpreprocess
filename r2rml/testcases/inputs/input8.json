@@ -3,16 +3,16 @@
         {
             "firstname": "John",
             "lastname": "Doe",
-            "lang": "en",
+            "lang": "English",
             "num": 3,
-            "dt": "int"
+            "dt": "xsd:integer"
         },
         {
             "firstname": "Jane",
             "lastname": "Smith",
-            "lang": "fr",
+            "lang": "French",
             "num": "3.14",
-            "dt": "dec"
+            "dt": "xsd:decimal"
         }
     ]
 }

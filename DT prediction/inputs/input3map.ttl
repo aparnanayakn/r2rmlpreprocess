@@ -32,7 +32,7 @@
 	 			rrf:function <#Attachlg> ;
 	 			rrf:parameterBindings (
 	 				[ rr:column "LASTNAME" ]
-	 				[ rr:column "LANG" ]
+	 				[ rr:column "LANGUAGE" ]
 	 			) ;
 	 		] ; 
         ];

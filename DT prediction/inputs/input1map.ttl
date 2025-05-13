@@ -16,10 +16,8 @@
 
     rr:predicateObjectMap [
         rr:predicate fcc:FNAME;
-
         rr:objectMap [
             rr:column "FIRSTNAME"; 
-            rr:dataType xsd:string;
         ];
     ];
 
@@ -50,8 +48,6 @@
 	 				[ rr:column "DT" ]
 	 			) ;
 	 		] ; 
-           rr:dataType xsd:integer;
-
         ];
     ];
 
